@@ -36,11 +36,7 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-group :development, :test do
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
-end
+  gem 'sqlite3', group: [:development, :test]
 
-group :production do
-  gem 'pg', '0.18.4'
-end
+  gem 'pg', '0.18.4', group: :production
