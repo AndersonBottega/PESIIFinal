@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @film.title %>
+</p>
+
+<p>
+  <strong>Classification:</strong>
+  <%= @film.classification %>
+</p>
+
+<p>
+  <strong>Quality:</strong>
+  <%= @film.quality %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @film.year %>
+</p>
+
+<%= link_to 'Edit', edit_film_path(@film) %> |
+<%= link_to 'Back', films_path %>
